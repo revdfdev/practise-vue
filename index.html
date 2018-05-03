@@ -11,10 +11,10 @@
 
 <body>
     <div id="app">
-        <div class="demo" @click="attachRed = !attachRed" :class="{'red': attachRed}"></div>
-        <div class="demo" @click="attachGreen = !attachGreen" :class="{'green': attachGreen}"></div>
-        <div class="demo" @click="attachBlue = !attachBlue" :class="{'blue': attachBlue}"></div>
-        <div class="demo" @click="attachYellow = !attachYellow" :class="{'yellow': attachYellow}"></div>
+        <div class="demo" @click="attachRed = !attachRed" :class="firstBlockClass"></div>
+        <div class="demo" @click="attachGreen = !attachGreen" :class="secondBlockClass"></div>
+        <div class="demo" @click="attachBlue = !attachBlue" :class="thirdBlockClass"></div>
+        <div class="demo" @click="attachYellow = !attachYellow" :class="fourthBlockClass"></div>
     </div>
 
     <script src="index.js" type="text/javascript"></script>

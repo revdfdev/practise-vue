@@ -7,4 +7,34 @@ new Vue({
     attachBlue: false,
     attachYellow: false,
   },
+
+  computed: {
+      firstBlockClass: function() {
+          return {
+              red: this.attachRed,
+              maroon: !this.attachRed
+          }
+      },
+
+      secondBlockClass: function() {
+          return {
+              green: this.attachGreen,
+              'light-green': !this.attachGreen
+          }
+      },
+
+      thirdBlockClass: function() {
+          return {
+              blue: this.attachBlue,
+              lightblue: !this.attachBlue
+          }
+      },
+
+      fourthBlockClass: function() {
+          return {
+              yellow: this.attachYellow,
+              orange: !this.attachYellow
+          }
+      }
+  }
 });
