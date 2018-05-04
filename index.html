@@ -15,6 +15,12 @@
         <div class="demo" @click="attachGreen = !attachGreen" :class="secondBlockClass"></div>
         <div class="demo" @click="attachBlue = !attachBlue" :class="thirdBlockClass"></div>
         <div class="demo" @click="attachYellow = !attachYellow" :class="fourthBlockClass"></div>
+
+        <hr>
+
+        <div class="demo" :class="[color, {'light-green': !attachGreen}]"></div>
+
+        <input type="text" v-model="color">
     </div>
 
     <script src="index.js" type="text/javascript"></script>
