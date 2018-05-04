@@ -1,3 +1,20 @@
+/* 
+new Vue({
+  el: "#app2",
+  data: {
+    color: gray,
+    width: 100
+  },
+  computed: {
+    myStyle: function() {
+      return {
+        backgroundColor: this.color,
+        width: this.width + "px"
+      };
+    }
+  }
+}); */
+
 new Vue({
   el: "#app",
   data: {
@@ -6,36 +23,51 @@ new Vue({
     attachGreen: false,
     attachBlue: false,
     attachYellow: false,
-    color: 'green'
+    color: "green"
   },
 
   computed: {
-      firstBlockClass: function() {
-          return {
-              red: this.attachRed,
-              maroon: !this.attachRed
-          }
-      },
+    firstBlockClass: function() {
+      return {
+        red: this.attachRed,
+        maroon: !this.attachRed
+      };
+    },
 
-      secondBlockClass: function() {
-          return {
-              green: this.attachGreen,
-              'light-green': !this.attachGreen
-          }
-      },
+    secondBlockClass: function() {
+      return {
+        green: this.attachGreen,
+        "light-green": !this.attachGreen
+      };
+    },
 
-      thirdBlockClass: function() {
-          return {
-              blue: this.attachBlue,
-              lightblue: !this.attachBlue
-          }
-      },
+    thirdBlockClass: function() {
+      return {
+        blue: this.attachBlue,
+        lightblue: !this.attachBlue
+      };
+    },
 
-      fourthBlockClass: function() {
-          return {
-              yellow: this.attachYellow,
-              orange: !this.attachYellow
-          }
-      }
+    fourthBlockClass: function() {
+      return {
+        yellow: this.attachYellow,
+        orange: !this.attachYellow
+      };
+    }
   }
+});
+
+
+new Vue({
+    el: '#app2',
+    data: {
+        color: 'gray',
+        width: 100,
+        height: 100
+    },
+    computed: {
+        myStyle: function() {
+            return { backgroundColor: this.color, width: this.width + "px", height: this.height + "px" };
+        }
+    }
 });
